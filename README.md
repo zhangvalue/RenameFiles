@@ -16,8 +16,9 @@
 用OS模块的 listdir 方法枚举目录下的文件名，用列表切片过滤后缀，再用 rename方法重命名文件。
 2.**多个文件夹嵌套 参考 rename2.py**
 用OS模块的 listdir 方法枚举目录下的文件名，根据具体的文件层数来嵌套
-## 效果图
+## CSDN链接
 CSDN链接: [link](https://zhangvalue.blog.csdn.net/article/details/103840520).
+## 效果图
 修改之前的文件名
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200105101957152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly96aGFuZ3ZhbHVlLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
 单个文件夹的情况 rename.py
