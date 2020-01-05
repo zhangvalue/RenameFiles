@@ -3,13 +3,15 @@
 # * Time : 2020-01-05 09:54
 # * Author : zhangsf
 # *===================================*
-# 批量修改文件名
+# 多文件夹批量修改文件名
 # 用 OS 模块的 listdir 方法枚举目录下的文件名，用列表切片过滤后缀，再用 rename 方法重命名文件
 import os
 
 path = '/Users/zhangsf/Movies/红楼梦/红楼梦001-060集'
 count = 0
-# os.listdir(path) 返回一个文件名列表
+files_list = os.listdir(path)
+print(files_list)  # 返回一个文件名列表
+
 for file_name in os.listdir(path):
     # 切片获取文件扩展名
     if file_name[-3::] == 'mp3':
@@ -22,4 +24,5 @@ for file_name in os.listdir(path):
         print(" after---文件名", new_name)
         print("************************")
         # os.rename 的参数要写全文件路径
-        os.rename(path + '/' + file_name, path + '/' + new_name)
+        # os.rename(path + '/' + file_name, path + '/' + new_name)
+print("文件夹：{0} 一共修改文件的个数为 {1}".format(path, count))
