@@ -24,5 +24,5 @@ for file_name in os.listdir(path):
         print(" after---文件名", new_name)
         print("************************")
         # os.rename 的参数要写全文件路径
-        # os.rename(path + '/' + file_name, path + '/' + new_name)
+        os.rename(path + '/' + file_name, path + '/' + new_name)
 print("文件夹：{0} 一共修改文件的个数为 {1}".format(path, count))
